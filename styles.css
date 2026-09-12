@@ -85,6 +85,18 @@ h3 { margin: 0 0 7px; color: var(--ink); font-size: 17px; font-weight: 500; line
 .research-content p { font-size: 15px; color: var(--muted); margin: 0; }
 .research-keywords { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 17px; }
 .research-keywords span { font-size: 12px; color: var(--accent); background: #f1f5f9; border: 1px solid #e2e9f0; padding: 3px 10px; border-radius: 2px; }
+.news-list { margin-top: 24px; border-top: 1px solid var(--line); }
+.news-item { display: grid; grid-template-columns: 94px minmax(0, 1fr); gap: 21px; align-items: start; padding: 17px 0 18px; border-bottom: 1px solid var(--line); }
+.news-date { display: flex; flex-direction: column; gap: 1px; color: var(--muted); font: 14px/1.5 var(--serif); }
+.news-year { color: var(--ink); font-size: 15px; }
+.news-date time { color: var(--muted); font-size: 13px; }
+.news-item p { margin: 0; color: var(--body); font-size: 15px; line-height: 1.75; }
+.news-item strong { color: var(--ink); font-weight: 500; }
+.honors-list { margin-top: 24px; border-top: 1px solid var(--line); }
+.honor-item { display: grid; grid-template-columns: 94px minmax(0, 1fr); gap: 21px; align-items: start; padding: 17px 0 18px; border-bottom: 1px solid var(--line); }
+.honor-date { color: var(--muted); font: 14px/1.5 var(--serif); }
+.honor-date time { white-space: nowrap; }
+.honor-item p { margin: 0; color: var(--body); font-size: 15px; line-height: 1.75; }
 .publication-empty { display: flex; gap: 20px; align-items: center; padding: 31px 0 4px; }
 .publication-empty > svg { width: 33px; height: 38px; color: #91a6ba; }
 .publication-empty h3 { font-size: 15px; margin-bottom: 4px; font-weight: 400; }
@@ -131,6 +143,10 @@ h3 { margin: 0 0 7px; color: var(--ink); font-size: 17px; font-weight: 500; line
   .research-content h3 { font-size: 16px; }
   .research-content p { font-size: 14px; }
   .research-bracket { font-size: 76px; }
+  .news-item { grid-template-columns: 76px minmax(0, 1fr); gap: 15px; padding: 15px 0 16px; }
+  .news-item p { font-size: 14px; line-height: 1.8; }
+  .honor-item { grid-template-columns: 76px minmax(0, 1fr); gap: 15px; padding: 15px 0 16px; }
+  .honor-item p { font-size: 14px; line-height: 1.8; }
   .publication-empty { gap: 15px; padding-top: 24px; }
   .publication-empty p { line-height: 1.8; }
   .page-footer { padding-bottom: 25px; flex-wrap: wrap; }
